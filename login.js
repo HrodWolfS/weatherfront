@@ -5,7 +5,7 @@ const registerPassword = document.querySelector("#registerPassword");
 
 document.querySelector("#register").addEventListener("click", () => {
   console.log(registerName.value, registerEmail.value, registerPassword.value);
-  fetch("http://localhost:3000/users/signup", {
+  fetch("https://weatherback-smoky.vercel.app/users/signup", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -27,7 +27,7 @@ const connectionPassword = document.querySelector("#connectionPassword");
 
 document.querySelector("#connection").addEventListener("click", () => {
   console.log(connectionEmail.value, connectionPassword.value);
-  fetch("http://localhost:3000/users/signin", {
+  fetch("https://weatherback-smoky.vercel.app/users/signin", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
